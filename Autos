@@ -27,3 +27,4 @@ public String acelerar (int rpm){
  public String frenar (int km){
         return "El auto " + this.MARCA + " de color " + this.COLOR + " esta frenando a " + km + " km del incio ";
  }
+ 
