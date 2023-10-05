@@ -1,0 +1,29 @@
+public class AUTOS {
+    String MARCA;
+    String MODELO;
+    String COLOR = "rojo";
+    Double cilidraje;
+
+    public String detalleAuto(){
+        //String COLOR = "VERDE";
+       /* System.out.println("MARCA" + this.MARCA);
+        System.out.println("MODELO" + this.MODELO);
+        System.out.println("COLOR " + this.COLOR);
+        System.out.println("cilindraje" + this.cilidraje)
+        */
+
+        String da = "\n MARCA " + this.MARCA +
+                "\nMODELO " + this.MODELO +
+                "\nCOLOR " + this.COLOR +
+                "\ncilindraje " + this.cilidraje;
+        return da;
+
+
+
+    }
+public String acelerar (int rpm){
+        return "el auto " + this.MARCA + " esta acelerando a " + rpm + "rpm";
+}
+ public String frenar (int km){
+        return "El auto " + this.MARCA + " de color " + this.COLOR + " esta frenando a " + km + " km del incio ";
+ }
