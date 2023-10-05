@@ -6,7 +6,15 @@ public class EjemploAutos {
         CHEVROLET.COLOR = "Rojo";
         CHEVROLET.cilidraje = 3.7;
         AUTOS toyota = new AUTOS();
+        toyota.MARCA = "Toyota";
+        toyota.MODELO = "Corola Cross";
+        toyota.COLOR = "Blanco";
+        toyota.cilidraje = 5.5;
         AUTOS ferrari = new AUTOS();
+        ferrari.MARCA = "Ferrari";
+        ferrari.MODELO = "F8";
+        ferrari.COLOR = "amarillo";
+        ferrari.cilidraje = 3.9;
 
 
         /*System.out.println("MARCA" + CHEVROLET.MARCA);
