@@ -1,0 +1,34 @@
+public class EjemploAutos {
+    public static void main(String[] args) {
+        AUTOS CHEVROLET = new AUTOS();
+        CHEVROLET.MARCA = "Chevrolet";
+        CHEVROLET.MODELO = "Aveo";
+        CHEVROLET.COLOR = "Rojo";
+        CHEVROLET.cilidraje = 3.7;
+        AUTOS toyota = new AUTOS();
+        AUTOS ferrari = new AUTOS();
+
+
+        /*System.out.println("MARCA" + CHEVROLET.MARCA);
+        System.out.println("MODELO" + CHEVROLET.MODELO);
+        System.out.println("COLOR " + CHEVROLET.COLOR);
+        System.out.println("cilindraje" + CHEVROLET.cilidraje);
+
+        System.out.println("MARCA" + toyota.MARCA);
+        System.out.println("MODELO" + toyota.MODELO);
+        System.out.println("COLOR " + toyota.COLOR);
+        System.out.println("cilindraje" + toyota.cilidraje);
+
+        System.out.println("MARCA" + ferrari.MARCA);
+        System.out.println("MODELO" + ferrari.MODELO);
+        System.out.println("COLOR " + ferrari.COLOR);
+        System.out.println("cilindraje" + ferrari.cilidraje);*/
+
+        System.out.println(CHEVROLET.detalleAuto());
+        System.out.println(CHEVROLET.acelerar(3500));
+        System.out.println(CHEVROLET.frenar(12));
+        System.out.println(toyota.detalleAuto());
+        System.out.println(ferrari.detalleAuto());
+
+    }
+}
