@@ -1,0 +1,9 @@
+public class PrincipalAutomovil {
+    public static void main(String[] args) {
+        Automovil LAMBO = new Automovil();
+        LAMBO.marca = "Lamborgini"; //va a imprimir toyota, porque va a tomar los valores de la clase principal
+        LAMBO.modelo = Integer.valueOf("Huracan");
+        LAMBO.motor = Integer.valueOf("")
+
+    }
+}
