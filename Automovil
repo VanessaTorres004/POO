@@ -1,0 +1,9 @@
+public class Automovil {
+    String marca = "Lambrogini";
+    Integer modelo;
+    Integer motor;
+    Integer numeroPuertas;
+    Integer cantidadAsientos;
+    Integer velocidadMaxima;
+    Integer velocidadactual;
+}
