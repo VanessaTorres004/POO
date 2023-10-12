@@ -1,0 +1,5 @@
+public class HolaMundo {
+    public static void main(String[] args) {
+        String var = "hola mundo";
+        System.out.println("El Ecuador les dice : " + var); //desplegar variable
+    }
