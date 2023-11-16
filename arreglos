@@ -1,0 +1,76 @@
+import java.util.Arrays;
+import java.util.Comparator;
+import javax.print.attribute.IntegerSyntax;
+
+public class Arreglos {
+    public static void ordenarArreglo(Object[] arreglo){
+        int contador1=0;
+        for (int i=0; i< arreglo.length-1; i++){
+            for (int j =0; j< arreglo.length -1-i; j++){
+                if(((Comparable)arreglo[j+1]).compareTo(arreglo[j])<0){
+                    Object auxiliar = arreglo[j];
+                    arreglo[j] = arreglo[j+1];
+                    arreglo[j] = auxiliar;
+                }
+                contador1++;
+    }
+    public static void main(String[]  args) {
+        //String productos[] = new String[7];
+        String[] productos = { "XIAOMI","SAMSUMG","TELCEL","HUAWEI", "APPLE", "INFINIX", "ONE PLUS"};
+        //int total = productos .length; //hallar la longituud de la matriz productos
+//cadena de caracteres
+                
+        for (int i=0; i< productos.length; i++){
+            System.out.println("Indice " + i + " : "+ productos[i]);
+        }
+        ordenarArreglo(productos);
+       /* System.out.println();
+        Arrays.sort(productos):
+        for for (int i=0; i< productos.length; i++){
+            System.out.println("Indice " + i + " : "+ productos[i]);
+    }*/
+        //metodo burbuja
+        
+       /* for (int i=0; i< productos.length-1; i++){
+            for (int j =0; j< productos.length -1-i; j++){
+                if(productos[j+1].compareTo(productos[j])<0){
+                    String auxiliar = productos[i];
+                    productos[i] = productos[j+1];
+                    productos[i] = auxiliar;
+                }
+                contador1++; */
+                System.out.println("iteraciones " + contador1);
+                System.out.println();
+            }
+        }
+        for (int i=0; i< arreglo.length; i++){
+            System.out.println(arreglo[i]);
+        }
+        //con numeros
+        //inicializando tipo int
+        int[] numeros = new int [4];
+        numeros[0] = 17;
+        numeros[1] = 18;
+        numeros[2] = Integer.valueOf(19);//a enteros "cast"
+        numeros[3] = 20;
+
+        int totali= numeros.length;
+        for(int i=0; i<=totali;i++){
+            for(int j=0; j<=totali;j++){
+                if(((Integer) numeros[j + 1]).compareTo(numeros[j])<0){
+                int auxiliar = numeros[j];
+                    numeros[j] = numeros[j+1];
+                    numeros[j+1]=auxiliar;
+
+                }
+            }
+
+
+
+        }
+        System.out.println();
+        for(int i=0; i<=totali;i++){
+            System.out.println(numeros[i]);}
+    }
+
+    }
